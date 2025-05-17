@@ -311,11 +311,11 @@ while (mainwindow == 0):
             if os.path.exists(values['pluto7'] + "/bin/plutonium-bootstrapper-win32.exe"):
                 
                 if os.path.isfile(values['iw5'] + "/main/iw_00.iwd"):
-                    t_arg = "iw5mp"
-                  #  if values['multiplayer'] == True:
-                  #      t_arg = "iw5mp"
-                  #  if values['multiplayer'] == False:
-                  #      t_arg = "iw5sp"
+                    
+                    if values['multiplayer'] == True:
+                        t_arg = "iw5mp"
+                    if values['multiplayer'] == False:
+                        t_arg = "iw5sp"
                     iw5 = values['iw5']
                     usernamecache = values['usernamecache7']
                     launchiw5 = fr'"{iw5}"'
